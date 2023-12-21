@@ -1,0 +1,38 @@
+'use client';
+
+import clsx from 'clsx';
+import { Heart, Home, ShoppingBag, UserRound } from 'lucide-react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
+const links = [
+  { name: 'Home', href: '/', icon: Home },
+  {
+    name: 'Liked',
+    href: '/liked',
+    icon: Heart,
+  },
+  { name: 'Cart', href: '/cart', icon: ShoppingBag },
+  { name: 'Profile', href: '/profile', icon: UserRound },
+];
+
+export const BottomNavBar = () => {
+  const pathname = usePathname();
+
+  return (
+    <section className="flex items-center justify-between w-full p-4 shadow-[0_30px_60px_30px_rgba(0,0,0,0.15)] rounded-xl">
+      {links.map((link) => {
+        const LinkIcon = link.icon;
+        return (
+          <Link key={link.name} href={link.href}>
+            <LinkIcon
+              className={clsx('icon-primary', {
+                'text-brandGreen': pathname === link.href,
+              })}
+            />
+          </Link>
+        );
+      })}
+    </section>
+  );
+};

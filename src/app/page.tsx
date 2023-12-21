@@ -1,9 +1,5 @@
-import { Button } from '@/components/ui/button';
+import { Home } from '@/modules/Home';
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Button>Click me</Button>
-    </main>
-  );
+export default function HomePage() {
+  return <Home />;
 }

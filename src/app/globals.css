@@ -71,6 +71,12 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground text-brandBlueOpacity;
+  }
+}
+
+@layer components {
+  .icon-primary {
+    @apply text-brandLightGreen;
   }
 }
