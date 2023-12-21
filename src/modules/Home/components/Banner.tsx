@@ -3,7 +3,7 @@ import React from 'react';
 
 export const Banner = () => {
   return (
-    <div className="relative flex flex-row-reverse w-full p-2 h-1/3 bg-brandGold rounded-2xl">
+    <div className="relative flex flex-row-reverse w-full p-2 py-8 mt-8 bg-brandGold rounded-2xl">
       <Image
         src="./plant-medium.svg"
         alt="banner-pick"

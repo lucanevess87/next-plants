@@ -5,7 +5,7 @@ import { PlantsTypeTabs } from './components/PlantsTypeTabs';
 
 export const Home = async () => {
   return (
-    <section className="flex flex-col items-center w-full h-full gap-4 overflow-auto">
+    <section className="flex flex-col w-full gap-6 overflow-y-auto">
       <Banner />
       <Search />
       <PlantsTypeTabs />

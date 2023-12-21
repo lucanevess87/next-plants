@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="relative flex flex-col justify-between items-center w-full h-[100vh] p-4 pt-6 gap-6">
+        <main className="relative flex flex-col w-full items-center h-[100vh] gap-6 p-4 pt-6">
           <TopNavBar />
           {children}
           <BottomNavBar />

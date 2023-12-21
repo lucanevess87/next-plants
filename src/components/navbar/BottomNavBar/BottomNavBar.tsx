@@ -20,7 +20,7 @@ export const BottomNavBar = () => {
   const pathname = usePathname();
 
   return (
-    <section className="absolute bottom-10 z-50 bg-white flex items-center justify-between w-5/6 p-4 shadow-[0_30px_60px_30px_rgba(0,0,0,0.15)] rounded-2xl">
+    <section className="absolute bottom-7 z-50 bg-white flex items-center justify-between w-5/6 p-4 shadow-[0_30px_60px_30px_rgba(0,0,0,0.15)] rounded-2xl">
       {links.map((link) => {
         const LinkIcon = link.icon;
         return (
