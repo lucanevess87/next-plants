@@ -24,6 +24,7 @@ module.exports = {
         brandOpacityGreen: "#DEEED6",
         brandBlueOpacity: "#435B71",
         brandLightGreen: "#97BA86",
+        brandGold: "#F9D7BD",
         // </BRAND COLORS>
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
