@@ -12,7 +12,7 @@ const tabs = [
 
 export const PlantsTypeTabs = () => {
   return (
-    <Tabs defaultValue="indoor" className="flex flex-col w-full gap-6">
+    <Tabs defaultValue="indoor" className="flex flex-col w-full">
       <TabsList className="flex items-center justify-between w-full h-[4rem] bg-transparent">
         {tabs.map(({ section, value, icon }) => {
           const Icon = icon;
@@ -26,26 +26,21 @@ export const PlantsTypeTabs = () => {
           );
         })}
       </TabsList>
-      <div className="flex flex-col">
-        <TabsContent value="indoor" className="tab-content">
-          <PlantCard />
-          <PlantCard />
-          <PlantCard />
-          <PlantCard />
-          <PlantCard />
-          <PlantCard />
-        </TabsContent>
-
-        <TabsContent value="flower" className="tab-content">
-          <PlantCard />
-        </TabsContent>
-
-        <TabsContent value="green" className="tab-content">
-          <PlantCard />
-          <PlantCard />
-        </TabsContent>
-      </div>
-
+      <TabsContent value="indoor" className="tab-content">
+        <PlantCard />
+        <PlantCard />
+        <PlantCard />
+        <PlantCard />
+        <PlantCard />
+        <PlantCard />
+      </TabsContent>
+      <TabsContent value="flower" className="tab-content">
+        <PlantCard />
+      </TabsContent>
+      <TabsContent value="green" className="tab-content">
+        <PlantCard />
+        <PlantCard />
+      </TabsContent>
       <div className="h-20"></div>
     </Tabs>
   );
