@@ -84,3 +84,13 @@
     @apply grid grid-flow-row grid-cols-1 gap-y-4;
   }
 }
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
