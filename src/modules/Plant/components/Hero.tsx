@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const Hero = () => {
   return (
-    <div className="relative flex w-full p-6 h-1/2 bg-opacity-30 bg-brandLightGreen rounded-bl-3xl">
+    <div className="relative flex w-full h-full p-6 bg-opacity-30 bg-brandLightGreen rounded-bl-3xl">
       <Image
         src="./plant-medium.svg"
         alt="banner-pick"

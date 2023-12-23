@@ -38,6 +38,7 @@ export const PlantsTypeTabs = () => {
         <PlantCard />
         <PlantCard />
       </TabsContent>
+
       <div className="h-20"></div>
     </Tabs>
   );
