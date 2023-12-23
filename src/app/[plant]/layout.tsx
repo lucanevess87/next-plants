@@ -6,5 +6,5 @@ export const metadata: Metadata = {
 };
 
 export default function PlantLayout({ children }: { children: React.ReactNode }) {
-  return <main>{children}</main>;
+  return <main className="w-full h-full">{children}</main>;
 }

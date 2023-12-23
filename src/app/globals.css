@@ -81,7 +81,7 @@
   }
 
   .tab-content {
-    @apply grid grid-flow-row grid-cols-1 gap-y-4;
+    @apply grid grid-flow-row grid-cols-1 gap-y-4 md:grid-cols-3 md:gap-4 lg:grid-cols-4;
   }
 }
 

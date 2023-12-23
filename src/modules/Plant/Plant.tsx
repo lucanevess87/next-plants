@@ -1,3 +1,10 @@
+import { Hero } from './components/Hero';
+
 export const Plant = async () => {
-  return <div>Plant</div>;
+  return (
+    <section className="flex flex-col w-full h-full">
+      <Hero />
+      <div></div>
+    </section>
+  );
 };
