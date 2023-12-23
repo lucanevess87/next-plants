@@ -8,8 +8,8 @@ export const Hero = () => {
         src="./plant-medium.svg"
         alt="banner-pick"
         className="absolute bottom-0 right-0 overflow-hidden"
-        width={220}
-        height={220}
+        width={230}
+        height={230}
       />
 
       <div className="flex flex-col w-1/2 gap-6 selection:justify-start">

@@ -30,9 +30,6 @@ export const PlantsTypeTabs = () => {
         <PlantCard />
         <PlantCard />
         <PlantCard />
-        <PlantCard />
-        <PlantCard />
-        <PlantCard />
       </TabsContent>
       <TabsContent value="flower" className="tab-content">
         <PlantCard />

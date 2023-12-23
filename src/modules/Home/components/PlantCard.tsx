@@ -12,12 +12,12 @@ export const PlantCard = () => {
         height={80}
         className="absolute bottom-0 left-0"
       />
-
-      <div className="absolute z-0 -right-8 bg-brandLightGreen flex justify-center bg-opacity-40 rounded-[50%] w-24 h-24">
-        <Link href="/plant-1" className="self-center pr-4">
-          <Plus className="w-5 h-5 text-white" />
-        </Link>
-      </div>
+      <Link
+        href="/plant-1"
+        className="absolute z-0 -right-8 bg-brandLightGreen flex justify-center bg-opacity-40 rounded-[50%] w-24 h-24"
+      >
+        <Plus className="self-center w-5 h-5 mr-5 text-white" />
+      </Link>
 
       <div className="flex flex-col items-start justify-between gap-4 pl-2">
         <div className="flex flex-col items-start gap-1">
