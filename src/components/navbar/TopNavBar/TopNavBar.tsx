@@ -1,4 +1,4 @@
-import { BellDot, Menu } from 'lucide-react';
+import { BellDot } from 'lucide-react';
 import Image from 'next/image';
 
 export const TopNavBar = () => {
@@ -10,7 +10,6 @@ export const TopNavBar = () => {
       </div>
       <div className="flex gap-4">
         <BellDot className="w-5 h-5" />
-        <Menu className="w-5 h-5" />
       </div>
     </section>
   );

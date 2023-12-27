@@ -7,7 +7,7 @@ import { Plant } from '@/api/plants/types';
 export const PlantCard = ({ name, family, id, price, image_url }: Plant) => {
   const image = image_url !== '' ? image_url : './plant-medium.svg';
   return (
-    <div className="relative z-50 flex flex-row-reverse items-center justify-center w-full p-2 px-4 overflow-hidden bg-opacity-25 rounded-2xl bg-brandLightGreen">
+    <div className="relative z-50 flex items-center justify-start w-full p-2 px-4 overflow-hidden bg-opacity-25 rounded-2xl bg-brandLightGreen">
       <Image
         src={image}
         alt="plant-medium"
@@ -22,7 +22,7 @@ export const PlantCard = ({ name, family, id, price, image_url }: Plant) => {
         <Plus className="self-center w-5 h-5 mr-5 text-white" />
       </Link>
 
-      <div className="flex flex-col items-start justify-between gap-4 pl-2">
+      <div className="flex flex-col items-start justify-start gap-4 pl-[5rem]">
         <div className="flex flex-col items-start gap-1">
           <h3 className="text-sm font-semibold text-brandBlue">{name}</h3>
           <p className="text-xs font-normal text-brandBlue">{family}</p>

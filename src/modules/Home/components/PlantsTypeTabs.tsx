@@ -37,7 +37,11 @@ export const PlantsTypeTabs = async () => {
         {tabs.map(({ section, value, icon }) => {
           const Icon = icon;
           return (
-            <TabsTrigger key={value} value={value} className="bg-transparent">
+            <TabsTrigger
+              key={value}
+              value={value}
+              className="rounded-none shadow-none focus:shadow-none"
+            >
               <div className="flex flex-col items-center gap-2">
                 <Icon />
                 <p className="font-semibold text-md">{section}</p>
