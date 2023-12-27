@@ -1,6 +1,6 @@
+import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
-
 import './globals.css';
 
 const inter = Poppins({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] });
@@ -13,7 +13,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={clsx(
+          inter.className,
+          'md:flex md:w-[100vw] md:justify-center md:bg-brandOpacityGreen',
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }

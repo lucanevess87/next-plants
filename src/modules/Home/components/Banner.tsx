@@ -6,14 +6,14 @@ import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carouse
 const banners = [
   {
     id: 'banner-1',
-    image: './plant-medium.svg',
+    image: '/plant-medium.svg',
     title: 'Exclusive Offer',
     subtitle: 'Get your 1st plant @ 60% off',
     mainColor: 'bg-brandGold',
   },
   {
     id: 'banner-2',
-    image: './plant-2-medium.svg',
+    image: '/plant-2-medium.svg',
     title: 'Magical Offer',
     subtitle: 'Get your 2st plant @ 80% off',
     mainColor: 'bg-brandOpacityGreen',
@@ -35,7 +35,7 @@ export const Banner = () => {
             <CarouselItem key={banner.id}>
               <div
                 className={clsx(
-                  'relative flex flex-row-reverse w-full p-2 py-8 mt-8 rounded-2xl md:mt-24 md:py-12',
+                  'relative flex flex-row-reverse w-full p-2 py-8 mt-8 rounded-2xl',
                   banner.mainColor,
                 )}
               >

@@ -33,7 +33,7 @@ export const PlantsTypeTabs = async () => {
 
   return (
     <Tabs defaultValue="indoor" className="flex flex-col w-full">
-      <TabsList className="flex items-center justify-between w-full h-[4rem] bg-transparent md:justify-start md:gap-4">
+      <TabsList className="flex items-center justify-between w-full h-[4rem] bg-transparent">
         {tabs.map(({ section, value, icon }) => {
           const Icon = icon;
           return (
