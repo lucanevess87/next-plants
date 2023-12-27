@@ -1,5 +1,3 @@
-import { Home } from '@/modules/Home';
-
 export default function HomePage() {
-  return <Home />;
+  return <h1>Login</h1>;
 }

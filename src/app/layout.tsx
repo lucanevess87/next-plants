@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 
 import './globals.css';
-import { BottomNavBar, TopNavBar } from '@/components/navbar';
 
 const inter = Poppins({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] });
 
@@ -14,13 +13,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <main className="relative flex flex-col w-full items-center supports-[height:100cqh]:h-[100cqh] supports-[height:100svh]:h-[100svh] gap-6 px-4 pt-6 md:px-12">
-          <TopNavBar />
-          {children}
-          <BottomNavBar />
-        </main>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

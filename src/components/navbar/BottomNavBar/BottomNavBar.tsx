@@ -6,14 +6,14 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 const links = [
-  { name: 'Home', href: '/', icon: Home },
+  { name: 'Home', href: '/plants', icon: Home },
   {
     name: 'Liked',
-    href: '/liked',
+    href: '/plants/liked',
     icon: Heart,
   },
-  { name: 'Cart', href: '/cart', icon: ShoppingBag },
-  { name: 'Profile', href: '/profile', icon: UserRound },
+  { name: 'Cart', href: '/plants/cart', icon: ShoppingBag },
+  { name: 'Profile', href: '/plants/profile', icon: UserRound },
 ];
 
 export const BottomNavBar = () => {
