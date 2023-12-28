@@ -6,14 +6,14 @@ import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carouse
 const banners = [
   {
     id: 'banner-1',
-    image: '/plant-medium.svg',
+    image: '/plant-1.png',
     title: 'Exclusive Offer',
     subtitle: 'Get your 1st plant @ 60% off',
     mainColor: 'bg-brandGold',
   },
   {
     id: 'banner-2',
-    image: '/plant-2-medium.svg',
+    image: '/plant-2.png',
     title: 'Magical Offer',
     subtitle: 'Get your 2st plant @ 80% off',
     mainColor: 'bg-brandOpacityGreen',

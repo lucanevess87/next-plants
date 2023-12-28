@@ -5,12 +5,11 @@ import Link from 'next/link';
 import { Plant } from '@/api/plants/types';
 
 export const PlantCard = ({ name, family, id, price, image_url }: Plant) => {
-  const image = image_url !== '' ? image_url : './plant-medium.svg';
   return (
     <div className="relative z-50 flex items-center justify-start w-full p-2 px-4 overflow-hidden bg-opacity-25 rounded-2xl bg-brandLightGreen">
       <Image
-        src={image}
-        alt="plant-medium"
+        src={image_url}
+        alt={name}
         width={80}
         height={80}
         className="absolute bottom-0 left-0"
