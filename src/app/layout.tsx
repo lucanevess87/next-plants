@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className={clsx(
           inter.className,
-          'md:flex md:w-[100vw] md:justify-center md:bg-brandOpacityGreen',
+          'md:flex md:w-[100vw] md:justify-center md:bg-brandOpacityGreen md:bg-opacity-50',
         )}
       >
         {children}
